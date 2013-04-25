@@ -1,0 +1,10 @@
+Flask==0.9
+Jinja2==2.6
+Werkzeug==0.8.3
+elasticutils==0.6
+gunicorn==0.17.4
+pyelasticsearch==0.3
+pyes==0.16.0
+requests==1.1.0
+simplejson==3.1.0
+wsgiref==0.1.2

@@ -1,5 +1,5 @@
 import json, os
-from flask import Flask, request, make_response
+from flask import Flask, request, Response, make_response
 from pyelasticsearch import *
 
 import apiModel
@@ -62,7 +62,7 @@ def businesses():
 
     results = es.search(es_query, index='foodinspection')
 
-    return cors_response(json.dumps(apiModel.format_businesses(results)))
+    return cors_response(Response(json.dumps(apiModel.format_businesses(results)), mimetype='application/json'))
 
 
 

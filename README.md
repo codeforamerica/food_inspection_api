@@ -6,8 +6,7 @@ This is an API to get restaurant inspection information.
 It is written in Python, and run as a
 [WSGI application](http://wsgi.readthedocs.org/en/latest/what.html).
 
-Install
--------
+## Install
 
 Prepare a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs.html)
 to hold the Python packages listed in `requirements.txt`:
@@ -26,6 +25,8 @@ Set an `ELASTICSEARCH_URL` environment variable.
 Run the application with [gunicorn](http://gunicorn.org/) on `localhost:8000`:
 
     gunicorn api:app
+
+## Examples
 
 ### Businesses
 
